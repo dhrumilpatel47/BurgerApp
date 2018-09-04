@@ -1,0 +1,43 @@
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="/image/classic-burger.png" alt="burger-logo">
+                <p id="logo"><b>Eat-Da-Burger!</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" id="not-devoured">
+                <ul> 
+                    {{#each burgers}} {{#unless devoured}}
+                    <li>
+                        <button class="burger-list btn btn-light btn-lg">{{id}}. {{burger_name}}</button>
+                        <button class="devour btn btn-danger" data-id="{{id}}">EAT</button>
+                    </li>
+                    {{/unless}} {{/each}}
+                </ul>
+            </div>
+            <div class="col-sm-6" id="devoured">
+                <ul>
+                    {{#each burgers}} {{#if devoured}}
+                    <li>
+                        <button class="burger-list btn btn-dark btn-lg">{{id}}. {{burger_name}}</button>
+                        <button class="delete btn btn-danger" data-id="{{id}}">delete</button>
+                    </li>
+                    {{/if}} {{/each}}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 create-div">
+                <form class="create">
+                    <input type="text" id="new" name="new-burger">
+                    <br>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+
+                    <p class="instruction"><b>Enter a burger you want to eat Click the "Submit" button</b></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

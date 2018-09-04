@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(171, 174, 194);
+}
+
+img{
+    margin-top: 30px;
+}
+
+#logo{
+    font-size: 60px;
+    color: white;
+}
+
+.container{
+
+    text-align: center;
+}
+
+.instruction{
+    margin-top:5px;
+    font-size: 25px;
+    color: white;
+}
+
+#devoured{
+    text-align: left;
+}
+
+button{
+    margin:10px;
+}
+
+#not-devoured{
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.create-div{
+    text-align-last: center;
+}
+
+
+
+
